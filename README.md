@@ -82,6 +82,12 @@ templates/
 view_db.py
 ```
 
+## Screenshots
+![Login](docs/LoginPage.png)
+![User](docs/UserPage.png)
+![Admin](docs/AdminPage.png)
+
+
 ## Notes
 - Passwords are hashed with **Bcrypt**; ORM queries go through **SQLAlchemy**.
 - For a stricter schema, `feedback` can reference `user.id` (FK) instead of storing `username` directly.
