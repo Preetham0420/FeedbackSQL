@@ -1,21 +1,26 @@
 # Feedback App (Flask + SQLite)
 
-A small web app for collecting and reviewing user feedback.  
-Built with **Flask**, **SQLite**, and **SQLAlchemy**. Passwords are hashed with **Bcrypt**. The project keeps the code simple and focuses on clear CRUD over a relational database.
+Small Flask app with an SQLite database for collecting user feedback. Uses SQLAlchemy ORM and Bcrypt for password hashing.
 
-## Features
-- User signup & login
-- Submit feedback
-- Admin page to review or clear all feedback
-- Lightweight CLI viewer for the database
-
-## Tech Stack
-- Python, Flask, SQLAlchemy, Bcrypt
-- SQLite (file-backed database)
-
-## Quick Start
-
-### 1) Clone
+## Setup & Run
 ```bash
-git clone https://github.com/Preetham0420/FeedbackSQL.git
-cd FeedbackSQL
+pip install -r requirements.txt  # or: pip install Flask Flask_SQLAlchemy Flask_Bcrypt tabulate
+python app.py
+```
+Open: http://127.0.0.1:5000
+
+## Database
+- `user`: id (PK), username (UNIQUE), password_hash  
+- `feedback`: id (PK), username, message
+
+## Admin
+Admin page at `/admin`. Create a user named **admin** via Signup, then log in.
+
+## Structure
+```
+app.py
+instance/feedback.db
+static/style.css
+templates/{login,signup,feedback,admin}.html
+view_db.py
+```
