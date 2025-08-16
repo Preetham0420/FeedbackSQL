@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="login-body">
+    <div class="wrapper">
+        <div class="intro-section">
+            <h1>Secure Customer Feedback System</h1>
+            <p class="subtitle">A Secure Platform for Collecting and Managing User Feedback</p>
+        </div>
+
+        <div class="container">
+            <h2>Signup</h2>
+            <form method="POST">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <a href="/login">Already have an account? Login</a>
+        </div>
+    </div>
+</body>
+</html>
