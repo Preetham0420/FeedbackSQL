@@ -14,7 +14,7 @@ A small web app for collecting and reviewing user feedback. It uses **Flask** fo
 
 ## Prerequisites
 - Python 3.9+
-- (Optional) Virtual environment
+- Virtual environment
   ```bash
   python -m venv venv
   # Windows
@@ -24,11 +24,7 @@ A small web app for collecting and reviewing user feedback. It uses **Flask** fo
   ```
 
 ## Setup
-If you have a `requirements.txt`:
-```bash
-pip install -r requirements.txt
-```
-Otherwise:
+
 ```bash
 pip install Flask Flask_SQLAlchemy Flask_Bcrypt tabulate
 ```
