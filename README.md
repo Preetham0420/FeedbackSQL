@@ -80,7 +80,6 @@ templates/
   feedback.html
   admin.html
 view_db.py
-How to Run.txt
 ```
 
 ## Notes
